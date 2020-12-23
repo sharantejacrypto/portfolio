@@ -174,7 +174,7 @@ section.portfolio .portfolio-content {
 /* Sections Content Styling */
 
 .font-style-1 {
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
 }
