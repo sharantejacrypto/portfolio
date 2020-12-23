@@ -6,23 +6,42 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
 
 document.getElementById('b-tech').innerHTML = `July 2018 - ${monthNames[date.getMonth()]} ${date.getFullYear()}`;
 // Navigation
-var activeTag = document.querySelector('.active');
+var navbarBtn = document.getElementById('navbarButton');
+var navbar = document.getElementById('navbar');
+
+var active = document.querySelector('.active');
 var navLinks = document.querySelectorAll('.nav-link');
-var hrTags = document.getElementsByTagName('hr');
+
+var hr = document.getElementsByTagName('hr');
 var hrTop = [];
-for (var i = 0; i < hrTags.length; i++) {
-  hrTop.push(hrTags[i].offsetTop);
+for (var i = 0; i < hr.length; i++) {
+  hrTop.push(hr[i].offsetTop);
 }
 
-navigateTo = id => $('html, body').animate({
-  scrollTop: $("#" + id).offset().top
-}, 1000);
+var maxWidth = window.matchMedia("(max-width: 991px)");
+maxWidth.addListener(() => {
+  if(!maxWidth.matches){
+    navbarBtn.setAttribute('class', 'navbar-toggler');
+    navbarBtn.setAttribute('aria-expanded', 'true');
+  }
+});
+
+navigateTo = id => {
+  if(maxWidth.matches){
+    navbarBtn.setAttribute('class', 'navbar-toggler collapsed');
+    navbarBtn.setAttribute('aria-expanded', 'false');
+    navbar.setAttribute('class', 'navbar-collapse collapse');
+  }
+  $('html, body').animate({
+    scrollTop: $("#" + id).offset().top
+  }, 1000);
+}
 
 setActive = element => {
-  if (element != activeTag) {
+  if (element != active) {
     element.setAttribute('class', 'nav-link active');
-    activeTag.setAttribute('class', 'nav-link');
-    activeTag = element;
+    active.setAttribute('class', 'nav-link');
+    active = element;
   }
 }
 
@@ -39,7 +58,4 @@ window.onscroll = () => {
   } else {
     setActive(navLinks[4]);
   }
-  // else if (thisTop >= hrTop[3] && thisTop <= hrTop[4]) {
-  //   setActive(navLinks[4]);
-  // }
 }
