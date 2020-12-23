@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: "Muli", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -22,6 +23,11 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+hr{
+  margin: 0;
+  border-color: #000;
 }
 
 .h1, .h2, .h3, .h4 {
@@ -70,11 +76,6 @@ a:hover {
   width: 3rem;
   height: 3rem;
   border-radius: 100%;
-}
-
-.hr-style {
-  margin: 0;
-  border-color: black;
 }
 
 /* Side Navbar */
@@ -213,9 +214,4 @@ section.portfolio .portfolio-content {
 .list-inline li:last-child::after {
   content: '';
   margin: 0;
-}
-
-.dev-icons {
-  font-family: "Roboto";
-  font-size: 1.4rem;
 }
