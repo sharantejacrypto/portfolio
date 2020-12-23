@@ -1,14 +1,278 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Sharan Teja - Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
-  <title>The HTML5 Herald</title>
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Local CSS -->
+  <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body>
-  <h1>Hello</h1>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark background-dark fixed-top sideNavbar">
+    <div class="navbar-brand">
+      <span class="d-block d-lg-none">
+        <img class="img-brand rounded-circle" src="images/profile.jpg" alt="" />
+        <b class="ml-2">SHARAN TEJA</b>
+      </span>
+      <span class="d-none d-lg-block mb-3">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/profile.jpg" alt="profile-pic" />
+        <br><b>SHARAN TEJA</b>
+      </span>
+    </div>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"/>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><span class="nav-link active" onclick="navigateTo('about')">About</span></li>
+        <li class="nav-item"><span class="nav-link" onclick="navigateTo('education')">Education</span></li>
+        <!-- <li class="nav-item"><span class="nav-link" onclick="navigateTo('experience')">Experience</span></li> -->
+        <li class="nav-item"><span class="nav-link" onclick="navigateTo('projects')">Projects</span></li>
+        <li class="nav-item"><span class="nav-link" onclick="navigateTo('skills')">Skills</span></li>
+        <li class="nav-item"><span class="nav-link" onclick="navigateTo('learning')">E-Learning</span></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Page Content-->
+  <div class="container-fluid p-0">
+    <!-- About-->
+    <section class="portfolio" id="about">
+      <div class="portfolio-content">
+        <h1 class="h1 mb-0">
+          Sharan Teja
+        </h1>
+        <div class="font-style-1 mb-5">
+          Bhagathnagar · Karimnagar . 505001, Telangana · (+91) 6302109527 ·
+          <a href="mailto:sharantejakasula@gmail.com">sharantejakasula@gmail.com</a>
+        </div>
+        <p class="font-style-2 mb-5">I am a student at
+          <a href="https://anurag.edu.in/" target="_blank">Anurag University</a>.
+          I was good at developing full-stack web and mobile applications using
+          <b>Express Framework</b> and frontend libraries like
+          <b>React</b> and <b>Flutter</b>.
+        </p>
+        <div class="social-icons">
+          <a class="social-icon" href="https://www.linkedin.com/in/sharan-teja-kasula/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a class="social-icon" href="https://github.com/sharanteja-crypto" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="social-icon" href="https://twitter.com/Sharan_Crypto" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <hr class="hr-style" />
+    <!-- Education-->
+    <section class="portfolio education" id="education">
+      <div class="portfolio-content">
+        <h2 class="h2 mb-5">Education</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h4 class="h4 mb-0">Anurag Group Of Institutions</h4>
+            <div class="font-style-1 mb-3">B.Tech(Computer Science Engineering)</div>
+            <p>GPA: 8.4</p>
+          </div>
+          <div class="flex-shrink-0"><span class="text-primary" id="b-tech"></span></div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h4 class="h4 mb-0">Alphores Junior College</h4>
+            <div class="font-style-1 mb-3">Intermediate(M.P.C)</div>
+            <p>GPA: 9.0</p>
+          </div>
+          <div class="flex-shrink-0"><span class="text-primary">July 2016 - May 2018</span></div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+          <div class="flex-grow-1">
+            <h4 class="h4 mb-0">Vivekananda Vidyanikethan High School</h4>
+            <div class="font-style-1 mb-3">10th</div>
+            <p>GPA: 8.9</p>
+          </div>
+          <div class="flex-shrink-0"><span class="text-primary">July 2015 - May 2016</span></div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr-style" />
+    <!-- Projects-->
+    <section class="portfolio" id="projects">
+      <div class="portfolio-content">
+        <h2 class="h2 mb-5">Personal Projects</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h4 class="h4 mb-3">Internal Service Request System</h4>
+            <div class="font-style-1 mb-1">
+              Internal Service Request System is a web application made using <b>React.js</b> with
+              <b>Express Framework</b>, and <b>MYSQL(CRUD Operations)</b> as a database. An employee can
+              authenticate themselves to raise software or hardware service requests, and an admin can reject
+              or approve a request. Admin can assign an ICT employee for an approved request for resolving the
+              issue of the employee.
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h4 class="h4 mb-3">Dice It</h4>
+            <div class="font-style-1 mb-3">
+              It is a web-based gaming application made using <b>Express Framework</b>, and <b>MongoDB</b>
+              as a database. This is the first web application that I have made where users can deposit cash.
+              Authenticated users guess a number on dice for every 3 minutes, and the system will generate a
+              result after every 3 minutes. Based on the result, users can win cash and withdraw to their bank
+              account.
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h4 class="h4 mb-3">GO Foodie</h4>
+            <div class="font-style-1 mb-3">
+              It was a simple cross-platform mobile application made using <b>React Native Framework</b> and
+              integrated <b>Yelp API</b> for restaurants data that is used to display for users. The restaurants
+              are displayed in a list of reusable cards format with the overall rating of restaurants at the bottom
+              of the card, and users can search for restaurants or food they like.
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h4 class="h4 mb-3">SPY Yourself</h4>
+            <div class="font-style-1 mb-3">
+              It is a cross-platform mobile application made using <b>React Native</b>, <b>RESTful API</b> with
+              <b>Express Framework</b>, and <b>MongoDB</b> as a database. Users can log in and start recording to
+              track the locations they visited, and they can save the tracked location so that they can review the
+              locations they visited.
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h4 class="h4 mb-3">Clima</h4>
+            <div class="font-style-1 mb-3">
+              It was a beautiful UI cross-platform mobile application made using <b>Flutter Framework</b> and
+              integrated <b>OpenWeatherMap API</b> for weather data that is used to display for users. Users can
+              get climate temperature for their current location. Users can search for any location around the
+              globe to get that location's climate temperature.
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+          <div class="flex-grow-1">
+            <h4 class="h4 mb-3">Flash Chat</h4>
+            <div class="font-style-1 mb-3">
+              It was a beautiful UI cross-platform mobile application made using <b>Flutter</b> and <b>Firebase</b>
+              as a database. Users can authenticate themselves and can chat with other users registered in the
+              application. The application was made only for group chat.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr-style" />
+    <!-- Skills-->
+    <section class="portfolio skills" id="skills">
+      <div class="portfolio-content">
+        <h2 class="h2 mb-5">Skills</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h4 class="h4 mb-3">Programming Languages</h4>
+            <ul class="list-inline dev-icons">
+              <li class="list-inline-item">C++</li>
+              <li class="list-inline-item">Java</li>
+              <li class="list-inline-item">Python</li>
+              <li class="list-inline-item">Data Structures</li>
+              <li class="list-inline-item">Algorithms</li>
+              <li class="list-inline-item">JavaScript</li>
+              <li class="list-inline-item">SQL</li>
+              <li class="list-inline-item">Dart</li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h4 class="h4 mb-3">Technologies</h4>
+            <ul class="list-inline dev-icons">
+              <li class="list-inline-item">React</li>
+              <li class="list-inline-item">Flutter</li>
+              <li class="list-inline-item">Spring</li>
+              <li class="list-inline-item">Hibernate</li>
+              <li class="list-inline-item">Express Framework</li>
+              <li class="list-inline-item">RESTful WebServices</li>
+              <li class="list-inline-item">MongoDB</li>
+              <li class="list-inline-item">MySQL</li>
+              <li class="list-inline-item">Firebase</li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+          <div class="flex-grow-1">
+            <h4 class="h4 mb-3">Tools</h4>
+            <ul class="list-inline dev-icons">
+              <li class="list-inline-item">Android Studio</li>
+              <li class="list-inline-item">Visual Studio Code</li>
+              <li class="list-inline-item">Visual Studio Community</li>
+              <li class="list-inline-item">Eclipse</li>
+              <li class="list-inline-item">Tomcat</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <hr class="hr-style" />
+    <!-- E-Learning -->
+    <section class="portfolio" id="learning">
+      <div class="portfolio-content">
+        <h2 class="h2 mb-5">E-Learning</h2>
+        <ul class="fa-ul m-0">
+          <li class="mb-1">
+            <img class="img-brand" src="images/udemy.png" alt="">
+            The Complete 2020 Web Development Bootcamp
+          </li>
+          <li class="mb-1">
+            <img class="img-brand" src="images/udemy.png" alt="">
+            The Complete React Native + Hooks Course
+          </li>
+          <li class="mb-1">
+            <img class="img-brand" src="images/udemy.png" alt="">
+            The Complete 2020 Flutter Development Bootcamp with Dart
+          </li>
+          <li class="mb-1">
+            <img class="img-brand" src="images/udemy.png" alt="">
+            Spring & Hibernate for Beginners (includes Spring Boot)
+          </li>
+          <li class="mb-0">
+            <img class="img-brand" src="images/udemy.png" alt="">
+            Complete C# Unity Developer 2D - Learn to Code Making Games
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
 </body>
+<script src="javascript/main.js" charset="utf-8"></script>
+
 </html>
